@@ -161,6 +161,7 @@ const Google = styled.button`
   z-index: 0;
   transition-duration: 167ms;
   font-size: 20px;
+  cursor: pointer;
   color: rgba(0, 0, 0, 0.6);
   &:hover {
     background-color: rgba(207, 207, 207, 0.25);
