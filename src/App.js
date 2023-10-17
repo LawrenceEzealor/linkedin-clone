@@ -16,14 +16,10 @@ import Rightside from "./components/Rightside";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route index element={<Home />} />
-      {/* <Route path='./login' element={<Login />} /> */}
-      {/* <Route path='./home' element={<Home />} /> */}
-      {/* <Route path='.header' element={<Header/>} /> */}
-      {/* <Route path='./main' element={<Main />} /> */}
-      {/* <Route path="/images" element={<images />} /> */}
-      {/* <Route path='./leftside' element={<Leftside />} /> */}
-      {/* <Route path='.rightside' element={<Rightside />} /> */}
+      <Route path="/" element={<Login />} />
+      <Route path="/home" element={<Header />}>
+        <Route index element={<Home />} />
+      </Route>
     </Route>
   )
 )
